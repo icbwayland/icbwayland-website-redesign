@@ -18,7 +18,7 @@
     },
     {
       "date": "2026-10-23",
-      "name": "Imam Adnan Wood Smith"
+      "name": "Imam Adnan Wood-Smith"
     },
     {
       "date": "2026-10-30",
@@ -59,12 +59,22 @@
   ],
   "events": [
     {
-      "date": "2026-09-18",
-      "featured": true,
+      "date": "2026-10-23",
+      "featured": false,
       "tag": "",
-      "title": "Quran In Conversation With Imam Hamayun Baksh",
-      "meta": "Friday, September 18th, 2026 at ICB Wayland",
-      "image": "/images/events/2026-09-18-icb-flywe-imam-hamayun-baksh-sept18-2026.jpg"
+      "title": "Why Did God Speak in Arabic by Imam Adnan Wood-Smith",
+      "meta": "Friday, October 23rd, 2026 at ICB Wayland",
+      "image": "/images/events/2026-10-14-icb-halaqa-adnan-wood-smith-20261023.jpg",
+      "imageAlt": "Flyer for October 23, 2026 Halaqa"
+    },
+    {
+      "date": "",
+      "featured": false,
+      "tag": "",
+      "title": "",
+      "meta": "",
+      "image": "",
+      "imageAlt": ""
     }
   ],
   "youthEvents": [
