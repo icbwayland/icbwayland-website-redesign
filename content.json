@@ -13,23 +13,47 @@
   },
   "khateebs": [
     {
-      "date": "2026-10-02",
-      "name": "Dr. Dris Djermoun"
-    },
-    {
-      "date": "2026-10-09",
-      "name": "Hussein Dayib"
-    },
-    {
       "date": "2026-10-16",
       "name": "Dr. Saleem Khanani"
     },
     {
       "date": "2026-10-23",
-      "name": "Adnan Wood Smith"
+      "name": "Imam Adnan Wood Smith"
     },
     {
       "date": "2026-10-30",
+      "name": "Dr. Mohamad Lazzouni"
+    },
+    {
+      "date": "2026-11-06",
+      "name": "TBD"
+    },
+    {
+      "date": "2026-11-13",
+      "name": "Dr. Dris Djermoun"
+    },
+    {
+      "date": "2026-11-20",
+      "name": "Dr. Saleem Khanani"
+    },
+    {
+      "date": "2026-11-27",
+      "name": "Dr. Mohamad Lazzouni"
+    },
+    {
+      "date": "2026-12-04",
+      "name": "Imam Yousuf Eid"
+    },
+    {
+      "date": "2026-12-11",
+      "name": "TBD"
+    },
+    {
+      "date": "2026-12-18",
+      "name": "Dr. Saleem Khanani"
+    },
+    {
+      "date": "2026-12-25",
       "name": "Dr. Mohamad Lazzouni"
     }
   ],
@@ -274,7 +298,7 @@
     "youtube": "https://youtube.com/c/ICBWayland"
   },
   "donateUrl": "https://www.paypal.com/donate?hosted_button_id=Z25J5QYZZSYSE",
-  "siteUpdated": "2026-10-10",
+  "siteUpdated": "2026-10-14",
   "youth": {
     "registrationTitle": "2026–2027 Registration",
     "registrationBody": "Sign up for the ICB Wayland Youth Group for this school year.",
