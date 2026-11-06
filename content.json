@@ -82,6 +82,15 @@
       "signupUrl": "https://docs.google.com/forms/d/e/1FAIpQLSchDQ5OyUuC47WHgJCeP3MyH-gbU_xJdEWg6ax6u3S1SkYX0Q/viewform?usp=dialog",
       "image": "/images/events/2026-10-16-1023-yg-omar-s-bistro-flyer.jpg",
       "imageAlt": ""
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Puttshack!",
+      "tag": "",
+      "meta": "Saturday, November 14th",
+      "signupUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeeUWRIL1f29i4XHqUjXK_kP2la9fuJDywZOCWydrHQacjLKA/viewform?usp=dialog",
+      "image": "/images/events/2026-11-06-beige-and-aquamarine-golf-tournament-poster.jpg",
+      "imageAlt": ""
     }
   ],
   "announcement": {
@@ -296,7 +305,7 @@
     "youtube": "https://youtube.com/c/ICBWayland"
   },
   "donateUrl": "https://www.paypal.com/donate?hosted_button_id=Z25J5QYZZSYSE",
-  "siteUpdated": "2026-11-05",
+  "siteUpdated": "2026-11-06",
   "youth": {
     "registrationTitle": "2026–2027 Registration",
     "registrationBody": "Sign up for the ICB Wayland Youth Group for this school year.",
