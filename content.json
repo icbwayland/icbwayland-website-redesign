@@ -341,7 +341,8 @@
     "lailatulQadrFoodUrl": "",
     "zakatFitrAmount": "",
     "fidyahAmount": "",
-    "schedule": []
+    "schedule": [],
+    "showIftarSponsorship": true
   },
   "management": {
     "boardElected": [

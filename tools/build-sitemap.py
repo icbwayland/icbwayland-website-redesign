@@ -52,6 +52,7 @@ DEFAULT_PRIORITY = "0.6"
 # page has been switched on.
 SWITCHED_PAGES = {
     "/ramadan/": ("ramadan", "visible"),
+    "/prayers/iftar-sponsorship/": ("ramadan", "showIftarSponsorship"),
 }
 
 

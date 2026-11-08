@@ -413,6 +413,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
 
+  // --- Iftar sponsorship ----------------------------------------------------
+  // One switch in the portal (ramadan.showIftarSponsorship) shows or hides the
+  // sponsorship page's content, its card on the Prayers page and its homepage
+  // quick link. Anything marked data-iftar-when="on" shows only while it is on,
+  // "off" only while it is off. A missing switch counts as off.
+  const iftarOn = Boolean(ICB.ramadan && ICB.ramadan.showIftarSponsorship);
+  document.querySelectorAll("[data-iftar-when]").forEach(el => {
+    el.style.display = (el.dataset.iftarWhen === "on") === iftarOn ? "" : "none";
+  });
+  if (!iftarOn) {
+    // Eight links would leave the five-over-four grid's second row off centre,
+    // so they go back to the original layout; three cards go back to one row.
+    document.querySelectorAll(".quicklinks--five").forEach(el => el.classList.remove("quicklinks--five"));
+    document.querySelectorAll("[data-iftar-grid]").forEach(el => el.classList.remove("cols-2"));
+  }
+
   // --- Ramadan nav link ------------------------------------------------------
   // Hidden until an admin turns the page on, then injected on every page here
   // rather than hand-added to each one, so turning it on or off is never a
