@@ -575,3 +575,45 @@ live site. This closes the first item under Open in the 3 October entry.
   primary domain in Vercel, or change `BASE` in the script and the canonical
   links to the `www` form. The Vercel setting is the smaller change.
 - When Ramadan is switched on, run the script again so the page is listed.
+
+## Iftar Sponsorship page — 8 November 2026
+
+ICB's IT manager sent the Ramadan 2027 (1448 Hijrah) Saturday and Sunday iftars
+sponsorship text and a PayPal button (`N88BMVVHP8BBW`). It now lives at
+`/prayers/iftar-sponsorship/`, built like the other subpages: a green hero with
+the year, title and opening sentence, then one wide card (the ask on green with
+the homepage lattice, 6 iftars and $250 per sponsor as figures, and a gold
+Donate button; the closing line, the verse and the Please note list on white),
+then a Back to Prayers button. Wording is the IT manager's, word for word,
+except "by clicking on the donation button" now reads "with the donation
+button". The figures restate numbers already in the text.
+
+Two ways in:
+- **Prayers page:** a fourth card under the Iqamah times, styled like the other
+  three, linking to the page. Four cards sit two by two (`cols-2`).
+- **Homepage:** a ninth quick link, Iftar Sponsorship, with a crescent moon
+  icon. `quicklinks--five` lays nine links out five over four on wide screens
+  (a ten-column grid, the sixth link starting half a card in to centre the
+  second row), three by three on tablets, and one list on phones.
+
+Taymour first read "a fourth card" as the whole content on the Prayers page.
+That version was built and compared in three layouts (four across, two by two,
+full width below), then replaced by the card-plus-page he actually meant.
+
+### The switch
+`ramadan.showIftarSponsorship` in `content.json`, the only thing admins can
+change here, set from a new **Iftar Sponsorship** toggle in the Main portal
+(Taymour's call: nothing else editable for now). Anything marked
+`data-iftar-when="on"` shows only while it is on, `"off"` only while it is off;
+a missing switch counts as off. When off, the Prayers card and the quick link
+disappear, the cards return to three across and the links to their old layout,
+the page keeps its address but says sponsorship is not open, and
+`tools/build-sitemap.py` leaves the page out. Both positions were tested in a
+browser at desktop and phone width before pushing.
+
+### Open
+- **The new PayPal button could not be tested from here.** PayPal blocks
+  automated browsers, the existing working buttons included. Taymour reviewed
+  the page on his phone; a real tap on Donate is the check.
+- Next Ramadan the year, the number of iftars, the amount and the button will
+  change in the page's HTML, since only the switch is in the portal.
