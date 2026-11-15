@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400..600&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=20261108b" />
+  <link rel="stylesheet" href="/styles.css?v=20261114a" />
   <meta name="description" content="The Islamic Center of Boston in Wayland, MA. Daily prayer times, Friday Jumu&#39;ah, Sunday school, community events, and interfaith outreach. All are welcome." />
   <link rel="icon" type="image/jpeg" href="/images/icb-logo.jpg" />
   <meta property="og:title" content="Islamic Center of Boston — Wayland, MA" />
@@ -85,6 +85,12 @@
           <div class="prayer-time">
             <span class="prayer-time__name">Isha</span>
             <span class="prayer-time__value" data-prayer="isha">9:45 PM</span>
+          </div>
+          <!-- Friday shows both times, as the Prayers page does: a single
+               "Jumu'ah 1:30" led people to arrive after the khutba began. -->
+          <div class="prayer-time prayer-time--khutbah">
+            <span class="prayer-time__name">Khutba</span>
+            <span class="prayer-time__value" data-friday="khutbah">1:00 PM</span>
           </div>
           <div class="prayer-time">
             <span class="prayer-time__name">Jumu'ah</span>

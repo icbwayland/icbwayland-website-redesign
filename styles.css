@@ -418,6 +418,9 @@ html.menu-open, html.menu-open body { overflow: hidden; }
   font-size: 1rem;
   font-weight: 700;
 }
+/* Khutba and Jumu'ah are the two Friday times; a hairline sets them apart
+   from the five daily prayers. */
+.prayer-time--khutbah { padding-left: 1.5rem; border-left: 1px solid rgba(255,255,255,.18); }
 .prayer-time--next .prayer-time__name { color: var(--gold-400); }
 .prayer-time--next .prayer-time__value { color: var(--gold-400); font-size: 1.05rem; }
 .prayer-bar__link {
@@ -429,12 +432,6 @@ html.menu-open, html.menu-open body { overflow: hidden; }
   flex-shrink: 0;
 }
 .prayer-bar__link:hover { color: var(--white); }
-@media (max-width: 640px) {
-  .prayer-bar__inner {
-    mask-image: linear-gradient(to right, black 88%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, black 88%, transparent 100%);
-  }
-}
 
 /* ---------- Hero ---------- */
 .hero {
@@ -1560,34 +1557,47 @@ a[href^="tel:"], a[href^="sms:"] { white-space: nowrap; }
   /* Stack rather than hide the label. On a phone the bar is the first thing
      on the page, and a bare row of times reads as "prayer times for Boston"
      when it is really the congregation schedule at ICB. */
+  /* Button pairs: two short ones share the row, and anything that has to
+     wrap goes full width, so a short pill never sits over a long one. */
+  .btn-group { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .btn-group > .btn { flex: 1 1 auto; }
+}
+
+/* ---------- Prayer bar below desktop ----------
+   Seven times plus the label do not fit one row until the nav does, so up to
+   the same 1080px the label sits on its own line above the times, nothing
+   scrolls sideways, and every time shows. (Between about 480 and 900px the
+   old single row scrolled and hid most of the times.) */
+@media (max-width: 1080px) {
   .prayer-bar__inner {
     flex-direction: column;
     align-items: stretch;
     gap: .55rem;
     overflow-x: visible;
-    mask-image: none;
-    -webkit-mask-image: none;
   }
-  .prayer-bar__label {
-    display: block;
-    text-align: center;
-    font-size: .68rem;
-  }
+  .prayer-bar__label { display: block; text-align: center; font-size: .68rem; }
   .prayer-bar__link { display: none; }
-  /* Six times (Jumu'ah included) never fit one row on a phone, and a
-     sideways-scrolling strip hid Isha and Jumu'ah. Two rows of three show
-     every time at once. */
   .prayer-bar__times {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(7, minmax(0, 1fr));
     gap: .7rem 0;
   }
+  .prayer-time--khutbah { padding-left: 0; }
+}
+/* Just above 1080px the one-row bar is about 50px too wide, so the spacing
+   tightens there until there is room again. */
+@media (min-width: 1081px) and (max-width: 1159px) {
+  .prayer-bar__inner { gap: 1.25rem; }
+  .prayer-bar__times { gap: 1.1rem; }
+  .prayer-time--khutbah { padding-left: 1.1rem; }
+}
+/* Phones: four over three, the Friday pair at the end of the second row. */
+@media (max-width: 560px) {
+  .prayer-bar__times { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .prayer-time { grid-column: span 3; }
+  .prayer-time:nth-child(n+5) { grid-column: span 4; }
   .prayer-time__name { font-size: .7rem; }
   .prayer-time__value { font-size: .95rem; }
-  /* Button pairs: two short ones share the row, and anything that has to
-     wrap goes full width, so a short pill never sits over a long one. */
-  .btn-group { display: flex; flex-wrap: wrap; gap: .75rem; }
-  .btn-group > .btn { flex: 1 1 auto; }
 }
 
 /* ---------- Responsive 2-col helper ---------- */
