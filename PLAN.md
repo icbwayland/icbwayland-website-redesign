@@ -617,3 +617,25 @@ browser at desktop and phone width before pushing.
   the page on his phone; a real tap on Donate is the check.
 - Next Ramadan the year, the number of iftars, the amount and the button will
   change in the page's HTML, since only the switch is in the portal.
+
+## Khutba in the prayer bar — 15 November 2026
+
+Community members found the homepage bar confusing: it listed only "Jumu'ah
+1:30 PM", so people read that as the time to arrive and missed the khutba at
+1:00. The bar now shows **Khutba 1:00 PM** and **Jumu'ah 1:30 PM**, the same two
+times as the Prayers page, set apart from the five daily prayers by a hairline
+(`.prayer-time--khutbah`). The khutba time is the existing
+`prayers.jumuah.khutbah` field admins already fill in, so nothing new to maintain.
+
+**Fixed along the way:** between about 480 and 900px wide (tablets, small
+laptops) the bar was a single row that scrolled sideways and hid most times
+(only Fajr fully visible at 481px). The 3 October phone pass checked phones
+and desktop but not that range. Now, up to 1080px (where the nav also switches
+to the menu button), the label sits above the times in a seven-column row;
+phones show four over three; just above 1080px the spacing tightens until the
+one-row bar fits. Checked at 17 widths from 360 to 1920px, including the
+longest possible times.
+
+**Spelling:** Taymour chose "Khutba". The bar label and "Friday khutbas" on the
+Calendar page changed, and the portal field now reads "Khutba Begins". The data
+key stays `khutbah`, since renaming it would break the portal's saved content.
