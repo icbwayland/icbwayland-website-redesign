@@ -3,7 +3,7 @@
     "fajr": "6:00 AM",
     "zuhr": "1:30 PM",
     "asr": "3:00 PM",
-    "maghrib": "4:35 PM",
+    "maghrib": "4:25 PM",
     "isha": "8:00 PM",
     "jumuah": {
       "khutbah": "1:00 PM",
@@ -12,14 +12,6 @@
     "lastUpdated": "8 November 2026"
   },
   "khateebs": [
-    {
-      "date": "2026-11-06",
-      "name": "Br. Anas Idelbi"
-    },
-    {
-      "date": "2026-11-13",
-      "name": "Dr. Dris Djermoun"
-    },
     {
       "date": "2026-11-20",
       "name": "Dr. Sadik Kassim"
@@ -305,7 +297,7 @@
     "youtube": "https://youtube.com/c/ICBWayland"
   },
   "donateUrl": "https://www.paypal.com/donate?hosted_button_id=Z25J5QYZZSYSE",
-  "siteUpdated": "2026-11-08",
+  "siteUpdated": "2026-11-15",
   "youth": {
     "registrationTitle": "2026–2027 Registration",
     "registrationBody": "Sign up for the ICB Wayland Youth Group for this school year.",
