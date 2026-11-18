@@ -83,6 +83,15 @@
       "signupUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeeUWRIL1f29i4XHqUjXK_kP2la9fuJDywZOCWydrHQacjLKA/viewform?usp=dialog",
       "image": "/images/events/2026-11-06-beige-and-aquamarine-golf-tournament-poster.jpg",
       "imageAlt": ""
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Halaqah & Potluck!",
+      "tag": "",
+      "meta": "@ ICB Wayland from 7:00 - 9:00pm",
+      "signupUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe17Iupyf3A6NMd63tD2jrpatmjiedTMfU24-j26PAk6GCPCg/viewform",
+      "image": "/images/events/2026-11-18-halaqah-11-20.jpg",
+      "imageAlt": ""
     }
   ],
   "announcement": {
@@ -297,7 +306,7 @@
     "youtube": "https://youtube.com/c/ICBWayland"
   },
   "donateUrl": "https://www.paypal.com/donate?hosted_button_id=Z25J5QYZZSYSE",
-  "siteUpdated": "2026-11-15",
+  "siteUpdated": "2026-11-18",
   "youth": {
     "registrationTitle": "2026–2027 Registration",
     "registrationBody": "Sign up for the ICB Wayland Youth Group for this school year.",
