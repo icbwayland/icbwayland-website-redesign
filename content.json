@@ -2,20 +2,16 @@
   "prayers": {
     "fajr": "6:00 AM",
     "zuhr": "1:30 PM",
-    "asr": "3:00 PM",
-    "maghrib": "4:25 PM",
+    "asr": "2:45 PM",
+    "maghrib": "4:20 PM",
     "isha": "8:00 PM",
     "jumuah": {
       "khutbah": "1:00 PM",
       "iqamah": "1:30 PM"
     },
-    "lastUpdated": "14 November 2026"
+    "lastUpdated": "21 November 2026"
   },
   "khateebs": [
-    {
-      "date": "2026-11-20",
-      "name": "Dr. Sadik Kassim"
-    },
     {
       "date": "2026-11-27",
       "name": "Dr. Mohamad Lazzouni"
@@ -39,12 +35,12 @@
   ],
   "events": [
     {
-      "date": "2026-10-23",
+      "date": "2026-11-28",
       "featured": true,
       "tag": "",
-      "title": "Why Did God Speak in Arabic by Imam Adnan Wood-Smith",
-      "meta": "Friday, October 23rd, 2026 at ICB Wayland - Register at https://icbhalaqah10-23-26.eventbrite.com",
-      "image": "/images/events/2026-10-14-icb-halaqa-adnan-wood-smith-20261023.jpg",
+      "title": "Community Dinner on Thanksgiving Weekend",
+      "meta": "Saturday, November 28th, 2026 at ICB Wayland - Register at http://tinyurl.com/icbthanksgiving2027",
+      "image": "/images/events/2026-11-21-thanksgivingdinner.jpg",
       "imageAlt": "Flyer for October 23, 2026 Halaqa"
     }
   ],
@@ -306,7 +302,7 @@
     "youtube": "https://youtube.com/c/ICBWayland"
   },
   "donateUrl": "https://www.paypal.com/donate?hosted_button_id=Z25J5QYZZSYSE",
-  "siteUpdated": "2026-11-18",
+  "siteUpdated": "2026-11-21",
   "youth": {
     "registrationTitle": "2026–2027 Registration",
     "registrationBody": "Sign up for the ICB Wayland Youth Group for this school year.",
